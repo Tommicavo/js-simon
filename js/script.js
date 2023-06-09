@@ -11,6 +11,7 @@ const score = document.getElementById("score");
 const guessList = document.getElementById("guessList");
 
 const send = document.getElementById("send");
+const replay = document.getElementById("replay");
 
 const numToDisplay = 5;
 const sDelay = 5;
@@ -75,13 +76,4 @@ send.addEventListener("click", () => {
     score.innerText = resultArray[0];
     guessList.innerText = resultArray[1];
 });
-
-
-
-
-
-
-
-
-
 
