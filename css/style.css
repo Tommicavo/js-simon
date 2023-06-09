@@ -1,2 +1,19 @@
+#countdownField{
+    font-size: 4rem;
+    padding: 10px 0;
+}
+
+#randomNumContainer>*{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#answerContainer>*{
+    width: 50px;
+}
+
+.scoreField, #score, #guessList{
+    font-size: 24px;
+}
 
 

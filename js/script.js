@@ -14,7 +14,7 @@ const send = document.getElementById("send");
 const play = document.getElementById("play");
 
 const numToDisplay = 5;
-const sDelay = 5;
+const sDelay = 3;
 const msDelay = sDelay * 1000;
 
 play.addEventListener("click", () => {
@@ -39,13 +39,14 @@ play.addEventListener("click", () => {
     
     const showResult = (pcList, playerList) => {
         let currentScore = 0;
-        let guessList = "";
+        let guessList = "Hai indovinato: ";
         for (let i = 0; i < playerList.length; i++){
             if (pcList.includes(playerList[i])){
                 currentScore += 1;
                 guessList += `${playerList[i]}, `;
             }
         }
+        if (currentScore === 0) guessList = "Non hai indovinato nulla  ";
         return [currentScore, guessList.substring(0, guessList.length - 2)]
     };
 
