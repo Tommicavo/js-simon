@@ -17,7 +17,6 @@
         <script defer src="js/script.js"></script>
     </head>
     <body>
-        <h1 class="text-center">js-simon game</h1>
         <div class="myContainer vh-100 d-flex flex-column align-items-center justify-content-center gap-5 text-center">
             <div id="question">
                 <h2>Memorizza i numeri</h2>
@@ -29,12 +28,12 @@
                 <h2>Inserisci i numeri</h2>
                 <div id="answerContainer" class=" d-flex gap-5">
                 </div>
-                <button>send</button>
+                <button id="send">send</button>
             </div>
             <div id="result" class="d-none">
                 <h2>Results</h2>
-                <div>Score: <span>0</span></div>
-                <div>Hai indovinato: <span>12</span></div>
+                <div>Score: <span id="score"></span></div>
+                <div>Hai indovinato: <span id="guessList"></span></div>
             </div>
         </div>
     </body>
