@@ -19,21 +19,19 @@
     <body>
         <h1 class="text-center">js-simon game</h1>
         <div class="myContainer vh-100 d-flex flex-column align-items-center justify-content-center gap-5 text-center">
-            <div class="question">
+            <div id="question">
                 <h2>Memorizza i numeri</h2>
-                <div id="countdown">30</div>
-                <div>
-                    <span>12</span> <span>12</span> <span>12</span> <span>12</span> <span>12</span>
+                <div id="countdownField"></div>
+                <div id="randomNumContainer" class=" d-flex gap-5">
                 </div>
             </div>
-            <div class="answer">
+            <div id="answer" class="d-none">
                 <h2>Inserisci i numeri</h2>
-                <div>
-                    <input type="text"> <input type="text"> <input type="text"> <input type="text"> <input type="text">
+                <div id="answerContainer" class=" d-flex gap-5">
                 </div>
                 <button>send</button>
             </div>
-            <div class="results">
+            <div id="result" class="d-none">
                 <h2>Results</h2>
                 <div>Score: <span>0</span></div>
                 <div>Hai indovinato: <span>12</span></div>
